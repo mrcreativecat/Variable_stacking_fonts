@@ -1,0 +1,117 @@
+@font-face{
+	font-family: 'Decovar';
+	src: url(../fonts/DecovarAlpha.ttf);
+}
+
+@font-face{
+	font-family: 'Jakob';
+	src: url(../fonts/dTJakobVariableConceptGX.ttf);
+}
+
+@font-face {
+	font-family: strato_c;
+	src: url(../fonts/strato_cesello.woff2);
+}
+
+@font-face {
+	font-family: strato_e;
+	src: url(../fonts/strato_eclisse.woff2);
+}
+
+@font-face {
+	font-family: strato_i;
+	src: url(../fonts/strato_inline.woff2);
+}
+
+@font-face {
+	font-family: strato_r;
+	src: url(../fonts/strato_roman.woff2);
+}
+
+@font-face {
+	font-family: strato_t;
+	src: url(../fonts/strato_tonale.woff2);
+}
+body{
+	background: #71dc00;
+}
+.box{
+	background-color: black;
+	width: 720px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.litterbox{
+	height: 300px;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.litterrobot{
+	position: relative;
+	font-family: Decovar;
+	color: white;
+	z-index: 2;
+	font-size: 50pt;
+	margin-left: 40%;
+	margin-top: 15px;
+	animation: litterrobot linear infinite alternate 2s;
+}
+
+.price{
+	position: absolute;
+	margin-left: 40%;
+	margin-top: 0px;
+	font-size: 40pt;
+}
+
+.description{
+	position: relative;
+	font-family: Jakob;
+	font-size: 13pt;
+	color: white;
+	margin-left: 40%;
+	margin-top: 15px;
+}
+
+.description2{
+	position: relative;
+	font-family: Jakob;
+	font-size: 13pt;
+	color: #71dc00;
+	margin-left: 40%;
+	margin-top: 65px;
+}
+
+@keyframes litterrobot{
+	0%{font-variation-settings: "BLDA" 0, "SKLA" 0, "SKLB" 0, "TRMK" 0;}
+	50%{font-variation-settings: "BLDA" 0, "SKLA" 1000, "SKLB" 0, "TRMK" 0;}
+	100%{font-variation-settings: "BLDA" 1000, "SKLA" 0, "SKLB" 0, "TRMK" 0;}
+}
+
+.strato_r{
+	transform: translateZ(0px);
+	font-family: strato_r;
+	color: #71dc00;
+}
+.strato_e{
+	transform: translateZ(50px);
+	font-family: strato_e;
+	color: #428100;
+}
+.strato_c{
+	transform: translateZ(100px);
+	font-family: strato_c;
+	color: #ade175;
+}
+.strato_i{
+	transform: translateZ(150px);
+	font-family: strato_i;
+	color: #428100;
+}
